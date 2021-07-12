@@ -1,6 +1,7 @@
+
 let employee = {
-    streetAddress: '',
-    name: ''
+    streetAddress: '11 Broadway',
+    name: 'Sam'
 
 }
 
@@ -18,6 +19,13 @@ function deleteFromEmployeeByKey(employee, key) {
     delete newObject[key]
     return newObject
 }
-function destructivelyDeleteEmployeeWithKeyAndValue(employee, key, value) {
-    delete employee[key]
+/*function destructivelyDeleteFromEmployeeByKey(name, key) {
+    const employee = Object.assign(name, key)
+    newObject[employee] = undefined
     return employee
+}*/
+function destructivelyDeleteFromEmployeeByKey(employee, key){
+    const newEmployee = {employee}
+    employee.name = undefined
+    return employee
+}
