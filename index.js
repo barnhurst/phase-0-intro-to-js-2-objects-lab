@@ -19,11 +19,7 @@ function deleteFromEmployeeByKey(employee, key) {
     delete newObject[key]
     return newObject
 }
-/*function destructivelyDeleteFromEmployeeByKey(name, key) {
-    const employee = Object.assign(name, key)
-    newObject[employee] = undefined
-    return employee
-}*/
+
 function destructivelyDeleteFromEmployeeByKey(employee, key){
     const newEmployee = {employee}
     employee.name = undefined
